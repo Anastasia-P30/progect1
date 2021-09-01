@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ресторан | Tasty</title>
+  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+ @@include('parts/_header.html')
+
+  <main class="main">
+    <section class="login">
+      <div class="container container--mini">
+        <h2 class="login__title title">Вход для клиентов</h2>
+        <div class="login__wrapper">
+          <span class="login__text">Новый пользователь?</span>
+          <a href="#" class="login__link">Зарегистрироваться</a>
+        </div>
+        <form class="login__form">
+          <label class="visually-hidden" for="login__input--email">Адрес электронной почты</label>
+          <input class="login__input login__input--email" id="login__input--email" type="email"
+            placeholder="Адрес электронной почты">
+          <label class="visually-hidden" for="login__input--password">Пароль</label>
+          <input class="login__input login__input--password" id="login__input--password" type="password"
+            placeholder="Пароль">
+          <button class="login__btn button">Войти</button>
+          <span class="login__question">Забыли пароль?</span>
+        </form>
+        <span class="login__entrance">или</span>
+        <div class="login__buttons">
+          <a href="#" class="login__button button">Facebook
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#fb"></use>
+            </svg>
+          </a>
+          <a href="#" class="login__button button">Google
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#google"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('parts/_footer.html', {
+  'link': 'index.html'
+  })
+
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

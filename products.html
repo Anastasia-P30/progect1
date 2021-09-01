@@ -1,0 +1,393 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ресторан | Tasty</title>
+   <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="css/style.min.css">
+ </head>
+
+ <body>
+    <header class="header" id="header">
+   <div class="header__top">
+     <div class="container">
+       <ul class="header__top-list">
+         <li class="header__top-item">Только г. Санкт-Петербург</li>
+         <li class="header__top-item">Бесплатная доставка</li>
+         <li class="header__top-item">Наличный и безналичный рассчет</li>
+       </ul>
+     </div>
+   </div>
+   <div class="header__bottom">
+     <div class="container">
+       <div class="header__inner">
+         <a class="header__link-main button" href="products.html">Все наборы</a>
+         <a class="logo" href="index.html" >
+           <img src="images/logo.png" alt="логотип">
+         </a>
+
+         <div class="header__burger">
+           <span></span>
+         </div>
+
+         <ul class="header__menu">
+           <li class="header__menu-item">
+             <a href="login.html" class="header__link">Войти
+               <svg>
+                 <use xlink:href="images/icons/sprite.svg#user"></use>
+               </svg>
+             </a>
+           </li>
+           <li class="header__menu-item">
+             <a href="cart.html" class="header__link">Корзина
+               <svg>
+                 <use xlink:href="images/icons/sprite.svg#cart"></use>
+               </svg>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </header>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+   <main class="main">
+     <section class="products">
+       <div class="container">
+         <h2 class="products__title title">Блюда</h2>
+         <ul class="products__box">
+           <li class="products__item">
+             <article class="item @@sold stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/1.jpg" src="images/products/1x1.png" alt="Чизбургер с беконом">
+    </div>
+    <div class="item__text">
+      <p>Чизбургер с беконом</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/2.jpg" src="images/products/1x1.png" alt="Шашлык">
+    </div>
+    <div class="item__text">
+      <p>Шашлык</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/3.jpg" src="images/products/1x1.png" alt="Пицца">
+    </div>
+    <div class="item__text">
+      <p>Пицца</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/4.jpg" src="images/products/1x1.png" alt="Лосось под овощами">
+    </div>
+    <div class="item__text">
+      <p>Лосось под овощами</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/5.jpg" src="images/products/1x1.png" alt="Фрикадельки">
+    </div>
+    <div class="item__text">
+      <p>Фрикадельки</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/6.jpg" src="images/products/1x1.png" alt="Гамбургер с говяжьей котлетой">
+    </div>
+    <div class="item__text">
+      <p>Гамбургер с говяжьей котлетой</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/7.jpg" src="images/products/1x1.png" alt="Овощной крем-суп">
+    </div>
+    <div class="item__text">
+      <p>Овощной крем-суп</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/8.jpg" src="images/products/1x1.png" alt="Суп с фунчозой">
+    </div>
+    <div class="item__text">
+      <p>Суп с фунчозой</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/9.jpg" src="images/products/1x1.png" alt="Мясо на гриле">
+    </div>
+    <div class="item__text">
+      <p>Мясо на гриле</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/10.jpg" src="images/products/1x1.png" alt="Томатный суп с говядиной">
+    </div>
+    <div class="item__text">
+      <p>Томатный суп с говядиной</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/11.jpg" src="images/products/1x1.png" alt="Паста карбонара">
+    </div>
+    <div class="item__text">
+      <p>Паста карбонара</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/12.jpg" src="images/products/1x1.png" alt="Малиновый торт">
+    </div>
+    <div class="item__text">
+      <p>Малиновый торт</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/13.jpg" src="images/products/1x1.png" alt="Фруктовый салат">
+    </div>
+    <div class="item__text">
+      <p>Фруктовый салат</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/14.jpg" src="images/products/1x1.png" alt="Овощной салат">
+    </div>
+    <div class="item__text">
+      <p>Овощной салат</p>
+    </div>
+  </a>
+</article>
+           </li>
+           <li class="products__item">
+             <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/15.jpg" src="images/products/1x1.png" alt="Запеканка с тостами">
+    </div>
+    <div class="item__text">
+      <p>Запеканка с тостами</p>
+    </div>
+  </a>
+</article>
+           </li>
+         </ul>
+       </div>
+     </section>
+   </main>
+
+     <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__social">
+          <a class="footer__link" href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#inst"></use>
+            </svg>
+          </a>
+          <a class="footer__link" href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#twit"></use>
+            </svg>
+          </a>
+          <a class="footer__link" href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#fb"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__text">
+          <a class="footer__link2" href="#">О нас</a>
+          <a class="footer__link2" href="#">Как это работает?</a>
+          <a class="footer__link2" href="#">Условия использования</a>
+          <a class="footer__link2" href="#">Политика конфиденциальности</a>
+          <a class="footer__link2" href="mailto:info@tasty.ru">info@tasty.ru</a>
+        </div>
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="логотип">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+   <script src="js/wow.min.js"></script>
+   <script src="js/main.min.js"></script>
+ </body>
+
+ </html>

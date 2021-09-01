@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ресторан | Tasty</title>
+  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+   <header class="header" id="header">
+   <div class="header__top">
+     <div class="container">
+       <ul class="header__top-list">
+         <li class="header__top-item">Только г. Санкт-Петербург</li>
+         <li class="header__top-item">Бесплатная доставка</li>
+         <li class="header__top-item">Наличный и безналичный рассчет</li>
+       </ul>
+     </div>
+   </div>
+   <div class="header__bottom">
+     <div class="container">
+       <div class="header__inner">
+         <a class="header__link-main button" href="products.html">Все наборы</a>
+         <a class="logo" href="index.html" >
+           <img src="images/logo.png" alt="логотип">
+         </a>
+
+         <div class="header__burger">
+           <span></span>
+         </div>
+
+         <ul class="header__menu">
+           <li class="header__menu-item">
+             <a href="login.html" class="header__link">Войти
+               <svg>
+                 <use xlink:href="images/icons/sprite.svg#user"></use>
+               </svg>
+             </a>
+           </li>
+           <li class="header__menu-item">
+             <a href="cart.html" class="header__link">Корзина
+               <svg>
+                 <use xlink:href="images/icons/sprite.svg#cart"></use>
+               </svg>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </header>
+
+  <div class="progress-bar" id="progressBar"></div>
+  
+  <main class="main">
+    <section class="slider">
+      <h1 class="sr-only">Ресторан Tasty</h1>
+
+      <h2 class="sr-only">Акции и новости ресторана</h2>
+
+      <div class="container">
+        <ul class="slider__list">
+          <li class="slider__item">
+            <div class="slider__bg"
+              style="background-image: url(images/slider/1.png); background-color: rgb(236 222 97)">
+              <div class="slider__text">
+                <h3 class="slider__title">Что на ужин?</h3>
+
+                <div class="slider__subtitle">
+                  <p>
+                    Заказывайте любимые блюда из любимого ресторана
+                  </p>
+                </div>
+                <a class="slider__link button">Заказать</a>
+              </div>
+            </div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__bg"
+              style="background-image: url(images/slider/2.png); background-color: rgb(245 187 102)">
+              <div class="slider__text">
+                <h3 class="slider__title">Скоро в ассортименте!</h3>
+
+                <div class="slider__subtitle">
+                  <p>
+                    Паэлья!
+                  </p>
+                </div>
+                <a class="slider__link button">Узнать больше</a>
+              </div>
+            </div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__bg"
+              style="background-image: url(images/slider/3.png); background-color: rgb(222 107 46 / 51%)">
+              <div class="slider__text">
+                <h3 class="slider__title">Как это работает?</h3>
+
+                <div class="slider__subtitle">
+                  <p>
+                    Без нарезки и подготовки, 10
+                    минут - готово!
+                  </p>
+                </div>
+                <a class="slider__link button">Узнать больше</a>
+              </div>
+            </div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__bg"
+              style="background-image: url(images/slider/4.png); background-color: rgb(245 186 36 / 51%)">
+              <div class="slider__text">
+                <h3 class="slider__title">Жареные куриные ножки!</h3>
+
+                <div class="slider__subtitle">
+                  <p>
+                    Никогда не хватит на всех
+                  </p>
+                </div>
+                <a class="slider__link button">Заказать</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="favorites">
+      <div class="container">
+        <h2 class="favorites__title title">Избранное</h2>
+
+        <ul class="favorites__box">
+          <li class="favorites__item">
+            <article class="item @@sold stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/1.jpg" src="images/products/1x1.png" alt="Чизбургер с беконом">
+    </div>
+    <div class="item__text">
+      <p>Чизбургер с беконом</p>
+    </div>
+  </a>
+</article>
+          </li>
+          <li class="favorites__item">
+            <article class="item @@sold @@stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/2.jpg" src="images/products/1x1.png" alt="Шашлык">
+    </div>
+    <div class="item__text">
+      <p>Шашлык</p>
+    </div>
+  </a>
+</article>
+          </li>
+          <li class="favorites__item">
+            <article class="item @@sold stock">
+   <h3 class="sr-only">Карточка товара</h3>
+
+  <div class="item__stock">
+    <img class="item__image" src="images/products/stock.png" alt="акция">
+    <span>Осталось 3!</span>
+  </div>
+  <a class="item__links button" href="#">Заказать сейчас</a>
+  <a class="item__link" href="#">
+    <div class="item__wrapper">
+      <img class="item__img" data-src="images/products/3.jpg" src="images/products/1x1.png" alt="Пицца">
+    </div>
+    <div class="item__text">
+      <p>Пицца</p>
+    </div>
+  </a>
+</article>
+          </li>
+        </ul>
+        <a class="favorites__link2 button" href="#">Показать все наборы</a>
+      </div>
+    </section>
+
+    <section class="video">
+       <h2 class="sr-only">Видео приготовления пиццы</h2>
+
+      <a class="video__link" data-fancybox href="video/video.mp4" style="background-image: url(images/popup/1.jpg)">
+        <svg>
+          <use xlink:href="images/icons/sprite.svg#play"></use>
+        </svg>
+      </a>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <h2 class="benefits__title title">Наслаждайтесь тщательно продуманными блюдами</h2>
+
+        <div class="benefits__box">
+          <div class="benefits__item">
+            <div data-wow-duration="800" class="wow animate__zoomIn animate__animated">
+              <svg>
+                <use xlink:href="images/icons/sprite.svg#shopping-bag"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__subtitle">Доставка и распаковка</h3>
+
+            <div class="benefits__text">
+              <p>
+                Получите заранее приготовленные ингредиенты ресторанного класса.
+              </p>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <div data-wow-delay=".4s" data-wow-duration="800" class="wow animate__zoomIn animate__animated">
+              <svg>
+                <use xlink:href="images/icons/sprite.svg#chef-hat"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__subtitle">Пробудите в себе повара</h3>
+
+            <div class="benefits__text">
+              <p>
+                Следуйте простым и быстрым инструкциям местного шеф-повара.
+              </p>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <div data-wow-delay=".8s" data-wow-duration="800" class="wow animate__zoomIn animate__animated">
+              <svg>
+                <use xlink:href="images/icons/sprite.svg#restaurant"></use>
+              </svg>
+            </div>
+
+            <h3 class="benefits__subtitle">Приятного аппетита</h3>
+
+            <div class="benefits__text">
+              <p>
+                Наслаждайтесь любимым рестораном прямо из собственной кухни!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="container">
+        <h2 class="reviews__title title">Как это работает</h2>
+
+        <div class="work__wrapper">
+          <div class="work__item">
+            <div class="work__text">
+              <div class="work__num">1</div>
+              <div class="work__wrap">
+                <p>Получите он нас коробку с ингредиентами</p>
+              </div>
+            </div>
+            <a class="work__img-wrapper wow animate__zoomIn animate__animated" href="images/work/1.jpg" data-fancybox="images" data-wow-duration="800"
+              >
+              <img class="work__img" src="images/products/1x1.png" data-src="images/work/1.jpg"
+                alt="коробка с ингредиентами">
+            </a>
+          </div>
+          <div class="work__item">
+            <div class="work__text">
+              <div class="work__num">2</div>
+              <div class="work__wrap">
+                <p>Приготовьте блюдо по инструкции от нашего повара</p>
+              </div>
+            </div>
+            <a class="work__img-wrapper wow animate__zoomIn animate__animated" href="images/work/2.jpg" data-fancybox="images" data-wow-duration="800">
+              <img class="work__img" src="images/products/1x1.png" data-src="images/work/2.jpg"
+                alt="коробка с ингредиентами">
+            </a>
+          </div>
+          <div class="work__item">
+            <div class="work__text">
+              <div class="work__num">3</div>
+              <div class="work__wrap">
+                <p>Наслаждайтесь ресторанным блюдом!</p>
+              </div>
+            </div>
+            <a class="work__img-wrapper wow animate__zoomIn animate__animated" href="images/work/3.jpg"
+              data-wow-duration="800" 
+              data-fancybox="images">
+              <img class="work__img" src="images/products/1x1.png" data-src="images/work/3.jpg"
+                alt="коробка с ингредиентами">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title title">Отзывы наших клиентов</h2>
+        
+        <div class="reviews__inner">
+          <ul class="reviews__slider-one">
+            <li class="reviews__item">
+              <img class="reviews__img" src="images/products/1x1.png" data-src="images/reviews/1.jpg" alt="">
+            </li>
+            <li class="reviews__item">
+              <img class="reviews__img" src="images/reviews/2.jpg" alt="">
+            </li>
+            <li class="reviews__item">
+              <img class="reviews__img" src="images/reviews/3.jpg" alt="">
+            </li>
+            <li class="reviews__item">
+              <img class="reviews__img" src="images/reviews/4.jpg" alt="">
+            </li>
+          </ul>
+
+          <ul class="reviews__slider-two">
+            <li class="reviews__item2">
+              <div class="reviews__wrapper">
+                <blockquote class="reviews__cite">Удобный сервис: выбрал блюдо, заказал, привезли ингредиенты. За 10
+                  минут
+                  можно приготовить полноценный обед. Все уже нарезано. 
+                </blockquote>
+                <span class="reviews__author">
+                  Артем Мерзляков
+                </span>
+                <div data-wow-duration="800" class="star wow animate__animated animate__bounce" data-rateyo-rating="5">
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item2">
+              <div class="reviews__wrapper">
+                <blockquote class="reviews__cite">Теперь не обязательно питаться одним фастфудом, если не можешь
+                  приготовить себе что-то полноценное. За тебя уже продумали: какие ингредиенты нужны, сколько, тебе
+                  остается только быстро их доготовить.
+                </blockquote>
+                <span class="reviews__author">
+                  Семён Петров
+                </span>
+                <div data-wow-duration="800" class="star wow animate__animated animate__bounce" data-rateyo-rating="5">
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item2">
+              <div class="reviews__wrapper">
+                <blockquote class="reviews__cite">Вкусные блюда и демократичные цены, была приятно удивлена таким
+                  удобным
+                  сервисом.
+                </blockquote>
+                <span class="reviews__author">
+                  Дарья Малинина
+                </span>
+                <div data-wow-duration="800" class="star wow animate__animated animate__bounce" data-rateyo-rating="5">
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item2">
+              <div class="reviews__wrapper">
+                <blockquote class="reviews__cite">Заказал ингредиенты в вашем ресторане и удивил друзей изысканной едой.
+                  Обычно ничего, сложнее яичницы, не готовлю.
+                </blockquote>
+                <span class="reviews__author">
+                  Александр Морозов
+                </span>
+                <div data-wow-duration="800" class="star wow animate__animated animate__bounce" data-rateyo-rating="5">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__social">
+          <a class="footer__link" href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#inst"></use>
+            </svg>
+          </a>
+          <a class="footer__link" href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#twit"></use>
+            </svg>
+          </a>
+          <a class="footer__link" href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#fb"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__text">
+          <a class="footer__link2" href="#">О нас</a>
+          <a class="footer__link2" href="#">Как это работает?</a>
+          <a class="footer__link2" href="#">Условия использования</a>
+          <a class="footer__link2" href="#">Политика конфиденциальности</a>
+          <a class="footer__link2" href="mailto:info@tasty.ru">info@tasty.ru</a>
+        </div>
+        <a class="logo" href="#body">
+          <img src="images/logo.png" alt="логотип">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/wow.min.js" ></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

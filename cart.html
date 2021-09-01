@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ресторан | Tasty</title>
+  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+   <div class="header__top">
+     <div class="container">
+       <ul class="header__top-list">
+         <li class="header__top-item">Только г. Санкт-Петербург</li>
+         <li class="header__top-item">Бесплатная доставка</li>
+         <li class="header__top-item">Наличный и безналичный рассчет</li>
+       </ul>
+     </div>
+   </div>
+   <div class="header__bottom">
+     <div class="container">
+       <div class="header__inner">
+         <a class="header__link-main button" href="products.html">Все наборы</a>
+         <a class="logo" href="index.html" >
+           <img src="images/logo.png" alt="логотип">
+         </a>
+
+         <div class="header__burger">
+           <span></span>
+         </div>
+
+         <ul class="header__menu">
+           <li class="header__menu-item">
+             <a href="login.html" class="header__link">Войти
+               <svg>
+                 <use xlink:href="images/icons/sprite.svg#user"></use>
+               </svg>
+             </a>
+           </li>
+           <li class="header__menu-item">
+             <a href="cart.html" class="header__link">Корзина
+               <svg>
+                 <use xlink:href="images/icons/sprite.svg#cart"></use>
+               </svg>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </header>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <main class="main">
+    <section class="cart">
+      <h2 class="cart__title title">Ваша корзина</h2>
+      <div class="container">
+        <div class="cart__inner">
+          <div class="cart__wrapper-img">
+            <img data-wow-duration="800" class="cart__img wow animate__animated animate__swing"
+              src="images/cart/empty.png" alt="Пустая корзина">
+          </div>
+          <div class="cart__info">
+            <h3 class="cart__subtitle">Ваша корзина еще пуста</h3>
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#down-arrow"></use>
+            </svg>
+            <a class="cart__link button" href="products.html">Начать покупки</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+     <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__social">
+          <a class="footer__link" href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#inst"></use>
+            </svg>
+          </a>
+          <a class="footer__link" href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#twit"></use>
+            </svg>
+          </a>
+          <a class="footer__link" href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#fb"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__text">
+          <a class="footer__link2" href="#">О нас</a>
+          <a class="footer__link2" href="#">Как это работает?</a>
+          <a class="footer__link2" href="#">Условия использования</a>
+          <a class="footer__link2" href="#">Политика конфиденциальности</a>
+          <a class="footer__link2" href="mailto:info@tasty.ru">info@tasty.ru</a>
+        </div>
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="логотип">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ресторан | Tasty</title>
+   <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="css/style.min.css">
+ </head>
+
+ <body>
+   @@include('parts/_header.html')
+
+   <main class="main">
+     <section class="products">
+       <div class="container">
+         <h2 class="products__title title">Блюда</h2>
+         <ul class="products__box">
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Чизбургер с беконом",
+             "stock": "stock",
+             "image": "images/products/1.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Шашлык",
+             "image": "images/products/2.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Пицца",
+             "stock": "stock",
+             "image": "images/products/3.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Лосось под овощами",
+             "image": "images/products/4.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Фрикадельки",
+             "image": "images/products/5.jpg",
+             "sold": "sold"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Гамбургер с говяжьей котлетой",
+             "image": "images/products/6.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Овощной крем-суп",
+             "image": "images/products/7.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Суп с фунчозой",
+             "image": "images/products/8.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Мясо на гриле",
+             "image": "images/products/9.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Томатный суп с говядиной",
+             "image": "images/products/10.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Паста карбонара",
+             "sold": "sold",
+             "image": "images/products/11.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Малиновый торт",
+             "image": "images/products/12.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Фруктовый салат",
+             "image": "images/products/13.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Овощной салат",
+             "image": "images/products/14.jpg"
+             })
+           </li>
+           <li class="products__item">
+             @@include('parts/_item.html', {
+             "name": "Запеканка с тостами",
+             "image": "images/products/15.jpg"
+             })
+           </li>
+         </ul>
+       </div>
+     </section>
+   </main>
+
+   @@include('parts/_footer.html', {
+   'link': 'index.html'
+   })
+
+   <script src="js/wow.min.js"></script>
+   <script src="js/main.min.js"></script>
+ </body>
+
+ </html>
